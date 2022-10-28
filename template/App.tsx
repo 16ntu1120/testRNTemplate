@@ -5,7 +5,7 @@ import {USE_STORYBOOK} from './src/common/config';
 
 const App = () => {
  return(<SafeAreaView>
-  <Text>Test</Text>
+  <Text>My first template</Text>
 </SafeAreaView>)
       
     }
