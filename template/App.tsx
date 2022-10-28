@@ -1,19 +1,13 @@
-import React from 'react'
-import {SafeAreaView,Text,StyleSheet} from 'react-native';
+import React from 'react';
+import {SafeAreaView, Text} from 'react-native';
+import StorybookUIRoot from './storybook/index';
+import {USE_STORYBOOK} from './src/common/config';
 
+const App = () => {
+ return(<SafeAreaView>
+  <Text>Test</Text>
+</SafeAreaView>)
+      
+    }
 
-export default function App(){
-  return(
-    <SafeAreaView style={styles.container}>
-      <Text>Welome to my Template</Text>
-    </SafeAreaView>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent:'center',
-    alignItems:'center'
-  }
-})
+export default USE_STORYBOOK ? StorybookUIRoot : App;
